@@ -64,3 +64,9 @@ variable "stack_iam_role" {
   description = "The ARN of an IAM role that AWS CloudFormation assumes to create the stack (default behavior is to use the previous role if available, or current user permissions otherwise)."
   default     = null
 }
+
+variable "cid-cfn-etag" {
+  type        = string
+  default     = null
+  description = "set the e-tag to use for the cid-cfn.yml stack"
+}
